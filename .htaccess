@@ -16,3 +16,42 @@ RewriteBase /
 AddType text/html html php php2 php3 php4 php5 php7 phtml phtm
 AddType text/html asp aspx
 AddType text/css .css .cssver
+
+RewriteEngine On
+SetEnvIfNoCase User-Agent .*aboundexbot.* botstop
+SetEnvIfNoCase User-Agent .*ahrefsbot.* botstop
+SetEnvIfNoCase User-Agent .*archive\.org_bot.* botstop
+SetEnvIfNoCase User-Agent .*backlinkcrawler.* botstop
+SetEnvIfNoCase User-Agent .*blekkobo.* botstop
+SetEnvIfNoCase User-Agent .*blexbot.* botstop
+SetEnvIfNoCase User-Agent .*dotbot.* botstop
+SetEnvIfNoCase User-Agent .*dsearch.* botstop
+SetEnvIfNoCase User-Agent .*exabot.* botstop
+SetEnvIfNoCase User-Agent .*ezooms.* botstop
+SetEnvIfNoCase User-Agent .*gigabot.* botstop
+SetEnvIfNoCase User-Agent .*ia_archiver.* botstop
+SetEnvIfNoCase User-Agent .*linkdexbot.* botstop
+SetEnvIfNoCase User-Agent .*lipperhey spider.* botstop
+SetEnvIfNoCase User-Agent .*linkpadbot.* botstop
+SetEnvIfNoCase User-Agent .*majestic-12.* botstop
+SetEnvIfNoCase User-Agent .*majestic-seo.* botstop
+SetEnvIfNoCase User-Agent .*meanpathbot.* botstop
+SetEnvIfNoCase User-Agent .*megaindex.* botstop
+SetEnvIfNoCase User-Agent .*mj12bot.* botstop
+SetEnvIfNoCase User-Agent .*ncbot.* botstop
+SetEnvIfNoCase User-Agent .*nutch.* botstop
+SetEnvIfNoCase User-Agent .*pagesinventory.* botstop
+SetEnvIfNoCase User-Agent .*rogerbot.* botstop
+SetEnvIfNoCase User-Agent .*scoutjet.* botstop
+SetEnvIfNoCase User-Agent .*serpstatbot.* botstop
+SetEnvIfNoCase User-Agent .*searchmetricsbot.* botstop
+SetEnvIfNoCase User-Agent .*semrushbot.* botstop
+SetEnvIfNoCase User-Agent .*seokicks-robot.* botstop
+SetEnvIfNoCase User-Agent .*sistrix.* botstop
+SetEnvIfNoCase User-Agent .*sitebot.* botstop
+SetEnvIfNoCase User-Agent .*spbot.* botstop
+<Limit GET POST HEAD>
+Order Allow,Deny
+Allow from all
+Deny from env=botstop
+</Limit>
