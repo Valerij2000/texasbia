@@ -5,38 +5,17 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="//gmpg.org/xfn/11" />
-	<link rel="pingback" href="/xmlrpc.php" />
-
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
-	<!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Texas - Brain Injury Alliance</title>
 	<meta name="description" content="Aliansi informasi untuk cedera Otak di Texas, USA" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Texas - Brain Injury Alliance" />
-	<meta property="og:description" content="Aliansi informasi untuk cedera Otak di Texas, USA" />
-	<meta property="og:url" content="/" />
-	<meta property="og:site_name" content="Texas - Brain Injury Alliance" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<!-- / Yoast SEO plugin. -->
-	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-	<link rel='dns-prefetch' href='//s.w.org' />
-	<link rel="alternate" type="application/rss+xml" title="Texas - Brain Injury Alliance &raquo; Feed" href="/feed/" />
-	<link rel="alternate" type="application/rss+xml" title="Texas - Brain Injury Alliance &raquo; Comments Feed" href="/comments/feed/" />
-	<link rel='stylesheet' id='thinkup-google-fonts-css' href='//fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-	<link rel='stylesheet' id='prettyPhoto-css' href='/assets/themes/grow/lib/extentions/prettyPhoto/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
-	<link rel='stylesheet' id='thinkup-bootstrap-css' href='/assets/themes/grow/lib/extentions/bootstrap/css/bootstrap.min.css?ver=2.3.2' type='text/css' media='all' />
-	<link rel='stylesheet' id='font-awesome-css' href='/assets/themes/grow/lib/extentions/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
-	<link rel='stylesheet' id='thinkup-shortcodes-css' href='/assets/themes/grow/styles/style-shortcodes.css?ver=1.4.1' type='text/css' media='all' />
-	<link rel='stylesheet' id='thinkup-style-css' href='/assets/themes/grow/style.css?ver=1.4.1' type='text/css' media='all' />
-	<link rel='stylesheet' id='thinkup-responsive-css' href='/assets/themes/grow/styles/style-responsive.css?ver=1.4.1' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/lib/extentions/prettyPhoto/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/lib/extentions/bootstrap/css/bootstrap.min.css?ver=2.3.2' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/lib/extentions/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/styles/style-shortcodes.css?ver=1.4.1' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/style.css?ver=1.4.1' type='text/css' media='all' />
+	<link rel='stylesheet' href='/assets/config/grow/styles/style-responsive.css?ver=1.4.1' type='text/css' media='all' />
 	<script type='text/javascript' src='/assets/js/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
 	<script type='text/javascript' src='/assets/js/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-	<link rel="https://api.w.org/" href="/wp-json/" />
-	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-	<meta name="generator" content="WordPress 5.8.1" />
 	<link rel="icon" href="/assets/images/favicon.png" sizes="32x32" />
 </head>
 
@@ -118,9 +97,14 @@
 
 									<div class="entry-content">
 
-										<h2 class="blog-title"><a href="/hello-world/" title="Permalink to Hello world!">Hello world!</a></h2>
-										<div class="entry-meta"><span class="date"><a href="/hello-world/" title="Hello world!"><time datetime="2021-09-22T05:47:10+00:00">September 22, 2021</time></a></span><span class="author"><a href="/author/texasb/"
-													title="View all posts by texasb" rel="author">texasb</a></span><span class="comment"><a href="/hello-world/#comments"><span class="comment-count">1</span> <span class="comment-text">Comment</span></a></span></div>
+										<h2 class="blog-title"><a href="#hello-world" title="Permalink to Hello world!">Hello world!</a></h2>
+										<div class="entry-meta"><span class="date"><a href="#time" title="Hello world!">
+											<time datetime="2021-09-22T05:47:10+00:00" id="time"></time></a>
+										<script>
+											document.querySelector('#time').innerHTML = new Date().toLocaleDateString();
+										</script>
+										</span><span class="author"><a href="#texasb"
+													title="View all posts by texasb" rel="author">texasb</a></span><span class="comment"><a href="#comments"><span class="comment-count">1</span> <span class="comment-text">Comment</span></a></span></div>
 										<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 
 									</div>
@@ -149,7 +133,7 @@
 				<div id="sub-footer-core">
 
 					<div class="copyright">
-						Developed by <a href="//www.thinkupthemes.com/" target="_blank">Think Up Themes Ltd</a>. Powered by <a href="//www.wordpress.org/" target="_blank">WordPress</a>. </div>
+						Developed by <a href="#" rel="nofollow noopener noreferrer" target="_blank">Think Up config Ltd</a>. Powered by <a href="//www.wordpress.org/" rel="nofollow noopener noreferrer" target="_blank">WordPress</a>. </div>
 					<!-- .copyright -->
 
 					<!-- #footer-menu -->
@@ -160,16 +144,14 @@
 		</footer><!-- footer -->
 
 	</div><!-- #body-core -->
-
-	<script type='text/javascript' src='/assets/themes/grow/lib/extentions/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6' id='prettyPhoto-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/modernizr.js?ver=2.6.2' id='modernizr-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/plugins/waypoints/waypoints.min.js?ver=2.0.3' id='waypoints-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/plugins/scrollup/jquery.scrollUp.min.js?ver=2.4.1' id='jquery-scrollup-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/extentions/bootstrap/js/bootstrap.js?ver=2.3.2' id='thinkup-bootstrap-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/main-frontend.js?ver=1.4.1' id='thinkup-frontend-js'></script>
-	
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/plugins/ResponsiveSlides/responsiveslides.min.js?ver=1.54' id='responsiveslides-js'></script>
-	<script type='text/javascript' src='/assets/themes/grow/lib/scripts/plugins/ResponsiveSlides/responsiveslides-call.js?ver=1.4.1' id='thinkup-responsiveslides-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/extentions/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6' id='prettyPhoto-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/modernizr.js?ver=2.6.2' id='modernizr-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/plugins/waypoints/waypoints.min.js?ver=2.0.3' id='waypoints-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/plugins/scrollup/jquery.scrollUp.min.js?ver=2.4.1' id='jquery-scrollup-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/extentions/bootstrap/js/bootstrap.js?ver=2.3.2' id='thinkup-bootstrap-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/main-frontend.js?ver=1.4.1' id='thinkup-frontend-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/plugins/ResponsiveSlides/responsiveslides.min.js?ver=1.54' id='responsiveslides-js'></script>
+	<script type='text/javascript' src='/assets/config/grow/lib/scripts/plugins/ResponsiveSlides/responsiveslides-call.js?ver=1.4.1' id='thinkup-responsiveslides-js'></script>
 
 </body>
 
